@@ -5,3 +5,9 @@
 .container-fluid{
     padding-bottom: 30px;
 }
+
+body {
+
+    background-image: url(../img/background-cinza-para-site.jpg);
+
+}
