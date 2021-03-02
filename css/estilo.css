@@ -1,5 +1,7 @@
-.titulo{
-
+.text-muted{
     text-align: center;
-    background-color:darkgrey
+}
+
+.container-fluid{
+    padding-bottom: 30px;
 }
