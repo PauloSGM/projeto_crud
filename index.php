@@ -12,6 +12,16 @@
 </head>
 
 <body>
+
+<?php 
+
+$nome = $_POST[nome];
+$sobreNome = $_POST[sobreNome];
+$dataNasc = $_POST[dataNasc];
+$escolaridade = $_POST[escolaridade];
+
+
+?>
     <div id="titulo" class="container-fluid col-md-12 ">
         <div class="row">
             <div class="col-md-12">
@@ -20,47 +30,47 @@
         </div>
     </div>
     </div>
-    <div class="container-fluid col-md-12">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form>
+                <form method="POST">
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Digite seu primeiro nome</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Ex: João" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" name="nome" placeholder="Ex: João" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Digite seu sobrenome</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Ex: Pereira da Silva" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" name="sobreNome" placeholder="Ex: Pereira da Silva" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Digite sua data de nascimento</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Ex: 14/02/1991" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" name="dataNasc" placeholder="Ex: 14/02/1991" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Digite sua escolaridade</span>
                 </div>
-            </form>
-                <input type="text" class="form-control" placeholder="Ex: nível médio" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 
-            
-        </div>
-    </div>
-</div>
-<div class="container-fluid col-md-12">
+            </form>
+                <input type="text" class="form-control" name="escolaridade" placeholder="Ex: nível médio" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                
+                <div class="container-fluid col-md-12">
     <div class="row">
-        <div class="col-col-md-12">
-            <button type="button" class="btn btn-primary float-right">Adicionar informações</button>
+        <div class="col-col-md-12"><br>
+            <button type="submit" class="btn btn-primary float-right">Adicionar informações</button>
+        </div>
+    </div>
         </div>
     </div>
 </div>
-    <div class="container col-md-12 ">
+</div>
+    <div class="container-fluid">
     <div class="col-md-12">
         <div class="row">
         <table id="tblDados" class="table table-hover">
@@ -77,10 +87,10 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Paulo</td>
-                    <td>Moura</td>
-                    <td>29/11/1986</td>
-                    <td>Superior</td>
+                    <td><?php echo $nome?></td>
+                    <td><?php echo $sobreNome?></td>
+                    <td><?php echo $dataNasc?></td>
+                    <td><?php echo $escolaridade?></td>
                 </tr>
             </tbody>
         </table>
