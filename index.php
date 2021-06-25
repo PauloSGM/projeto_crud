@@ -107,7 +107,7 @@ case '2':
         <table id="tblDados" class="table table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Ordem</th>
+                    <th scope="col">Tabela</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Sobrenome</th>
                     <th scope="col">Data de nascimento</th>
