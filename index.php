@@ -41,7 +41,7 @@ case '2':
             $sobreNome4 = $_POST[sobreNome];
             $dataNasc4 = $_POST[dataNasc];
             $escolaridade4 = $_POST[escolaridade];
-            break;
+            break;  
 
 };
 ?>
@@ -73,16 +73,14 @@ case '2':
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Digite sua data de nascimento</span>
                 </div>
-                <input type="text" class="form-control" name="dataNasc" placeholder="Ex: 14/02/1991" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="date" class="form-control" name="dataNasc" placeholder="Ex: 14/02/1991" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
             </div>
-            <div class="input-group input-group-sm mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Digite sua escolaridade</span>
-                </div>
-                
-            
-                <input type="text" class="form-control" name="escolaridade" placeholder="Ex: nível médio" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-</div>
+            <select name="escolaridade" class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Escolha o seu nível de escolaridade</option>
+  <option value="Nível fundamental">Nível fundamental</option>
+  <option value="Nível Médio">Nível médio</option>
+  <option value="Nível superior">Nível superior</option>
+</select><br>
                 <div class="container-fluid col-md-12">
                 <select name="tabela" class="form-select form-select-sm" aria-label=".form-select-sm example">
   <option selected>Escolha em qual linha da tabela abaixo você quer salvar seus dados</option>
